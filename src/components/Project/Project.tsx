@@ -14,7 +14,9 @@ import './project.scss'
 
 export const Project:any = ({project}:any) => {
 
-    const {url, name, description, linkTo, repository, category, skills,} = project
+    let {url, name, description, linkTo, repository, category, skills,} = project
+
+    url = `../../src/assets/${url}`
 
     return (
         <li>
