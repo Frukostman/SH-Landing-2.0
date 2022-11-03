@@ -1,0 +1,77 @@
+@import '../../App.scss';
+
+.item:hover  .skill__info{
+    opacity: 0.5;
+} 
+.skill{
+    font-size: $fontXL*2;
+    color: $col_White;
+    opacity: 0.5;
+    box-shadow: 0 5px 45px rgba($col_Black, 0.1);
+    transition: all 0.5s ease 0s;
+    position: relative;
+    overflow: hidden;
+    border: $col_Transparent2 1px solid ;
+    border-radius: 5%;
+    margin: 1rem 1rem 0rem 1rem;
+    &:hover {
+        opacity: 1;
+        background-color: rgba(white, 0.2);
+        backdrop-filter: blur(40px);
+        // box-shadow: 0 5px 45px rgba($col_Black, 0.3);
+        transform: translateY(-2.5rem);
+
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+    }  
+
+    &__info {
+        font-size: $fontS;
+        position: relative;
+        top: -2rem;
+        color: $col_White;
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20rem;
+        height:100%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: skewX(45deg) translateX(350px);
+        transition: 0.3s;
+    }
+    &:hover::before {
+        transform: skewX(45deg) translateX(-550px);
+    } 
+}
+
+@media only screen and (max-width: 770px) {
+    .skill{
+        font-size: $fontXL;
+        margin: 0.2rem;
+        &__logo {
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }  
+        &__info {
+            font-size: $fontXS;
+            position: relative;
+            top: -2rem;
+            color: $col_White;
+            opacity: 0;
+            transition: all 0.5s ease 0s;
+        }
+    }
+}

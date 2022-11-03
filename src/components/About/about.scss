@@ -1,0 +1,58 @@
+@import '../../App.scss';
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: $col_Medium;
+    margin: 10%;
+    padding: 5%;
+    box-shadow: 30px 30px 0 0 $col_Dark;
+
+
+    &_text {
+        font-size: $fontS*1.5;
+    }
+    &_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 30%;
+        background-color: $col_Light;
+        border:  0 ;
+        border-radius: 0%;
+        height: 2.5rem;
+        margin-top: 4vh;     
+        font-weight: $weightL;   
+        box-shadow: 0.3rem 0.3rem 0px $col_Atention;
+        transition: all 0.5s ease-in-out;
+        & a {
+            transition: all 0.5s ease-in-out;
+            text-decoration: none;
+            color: $col_White;
+            &:hover {
+
+                color: $col_Black;
+            }
+        }
+        &:hover {
+            box-shadow: 0.3rem 0.3rem 0px $col_Light;
+            background-color: $col_Atention;
+            color: $col_Black;
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .about{
+        box-shadow: 15px 15px 0 0 $col_Dark;
+        margin: 5% 5% 10%;
+        &_text {
+            font-size: $fontS;
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+
+}

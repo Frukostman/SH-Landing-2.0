@@ -1,0 +1,24 @@
+import { Skill } from '../Skill/Skill';
+import { Title } from '../Title/Title';
+
+import skills from '../../assets/DB/skillsDB.json'
+
+import './skillList.scss'
+
+export const SkillList = () => {
+  return (
+    <section id="skills" className="skills">
+        <div className="circle"></div>
+        <Title text="SKILLS" titleColor='White' rectangleColor='BGC_Light'/>
+        <ul className="skills_list">
+            {
+                skills.map((skill) => {
+                    return (
+                        <Skill key={skill.id} skillLogo={skill.logo} skillName={skill.name} skillLevel={skill.level}/>
+                    )
+                })
+            }
+        </ul>
+    </section>
+  )
+}

@@ -1,0 +1,151 @@
+/* GLOBAL VARIABLES */
+
+// Colors
+$col_Atention: #08FDD8;
+$col_Background: #242424;
+$col_Light: #FD2155;
+$col_Medium: #ececec;
+$col_Dark: #181818;
+$col_Black: black;
+$col_White: white;
+
+// // Colors viejos
+// $col_Atention: #E63946;
+// $col_Background: #F1FAEE;
+// $col_Light: #A8DADC;
+// $col_Medium: #457B9D;
+// $col_Dark: #1D3557;
+// $col_Black: black;
+// $col_White: white;
+
+
+// Colors classes
+.Atention {
+    color: $col_Atention;
+}
+.Background {
+    color: $col_Background;
+}
+.Light {
+    color: $col_Light;
+}
+.Medium {
+    color: $col_Medium;
+}
+.Dark {
+    color: $col_Dark;
+}
+.Black {
+    color: $col_Black;
+}
+.White {
+    color: $col_White;
+}
+// Backgrpund Colors classes
+.BGC_Atention {
+    background-color: $col_Atention;
+}
+.BGC_Background {
+    background-color: $col_Background;
+}
+.BGC_Light {
+    background-color: $col_Light;
+}
+.BGC_Medium {
+    background-color: $col_Medium;
+}
+.BGC_Dark {
+    background-color: $col_Dark;
+}
+.BGC_Black {
+    background-color: $col_Black;
+}
+.BGC_White {
+    background-color: $col_White;
+}
+
+// Grayscale
+$tone: 1;
+
+$col_DarkGray: rgba(0, 0, 0, $tone*0.7);
+$col_MediumGray: rgba(0, 0, 0, $tone*0.5);
+$col_lightGray: rgba(0, 0, 0, $tone*0.3);
+
+//whitescale
+$col_Transparent1: rgba(255, 255, 255, $tone*0.8);
+$col_Transparent2: rgba(255, 255, 255, $tone*0.5);
+$col_Transparent3: rgba(255, 255, 255, $tone*0.2);
+
+// Fonts 
+
+/*MONTSERRAT*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300&display=swap');
+/*OPEN SANS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Teko:wght@300&display=swap');
+// DOSIS
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap');
+// RUBIK
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+$font_family_1: 'Inter', 'Avenir', Helvetica, Arial, sans-serif;
+$font_family_2: 'Inter', 'Avenir', Helvetica, Arial, sans-serif;
+$font_family_3: 'Inter', 'Avenir', Helvetica, Arial, sans-serif;
+$font_family_4: 'Inter', 'Avenir', Helvetica, Arial, sans-serif;
+
+// $font_family_1: 'Montserrat', sans-serif;
+// $font_family_2: 'Open Sans', sans-serif;
+// $font_family_3: 'Dosis', sans-serif;
+// $font_family_4: 'Rubik', sans-serif;
+
+$font_size: 1rem;
+
+$fontXS: $font_size*0.6;
+$fontS: $font_size;
+$fontM: $font_size*1.5;
+$fontL: $font_size*2;
+$fontXL: $font_size*2.5;
+
+$start_weight: 100;
+
+$weightXS: $start_weight;
+$weightS: $start_weight*2;
+$weightM: $start_weight*4;
+$weightL: $start_weight*6;
+$weightXL: $start_weight*8;
+
+
+// Shadows
+
+$shadow_1: 5px 5px 8px 1px rgba(0, 0, 0, 0.1);
+$shadow_2: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+$shadow_3: 0px 0px 24px -5px rgba(0,0,0,0.5);
+
+/* General values */
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    font-family: $font_family_2;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body {
+    background: linear-gradient(60deg, $col_Background 65%, $col_Atention 120%);
+}
+a , i {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+section {
+    height: auto;
+}
+
+
+

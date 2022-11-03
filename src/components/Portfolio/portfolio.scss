@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+.portfolio{
+    background-color: $col_White;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 94%, 0 100%);
+    text-align: center;
+    padding: 10% 0%;
+}
+.portfolio ul {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     list-style: none;
+     margin: 0;
+     padding: 1rem;
+ }
+
+ @media only screen and (max-width: 770px) {
+    .portfolio{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
+        padding: 10% 0%;
+    }
+    .portfolio ul {
+         padding: 0.5rem;       
+     }
+}
+@media only screen and (max-width: 450px) {
+
+}
+

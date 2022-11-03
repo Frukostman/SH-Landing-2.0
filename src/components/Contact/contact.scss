@@ -1,0 +1,78 @@
+@import '../../App.scss';
+
+.contact{
+    background-color: $col_Medium;
+    margin: 10% 10% 5% 10%;
+    padding: 5%;
+    text-align: center;
+}
+.up{
+    color: $col_Dark;
+    font-size: $fontS;
+    opacity: 0.5;
+    transition:all 1s ease-in-out;
+    &:hover {
+        color: $col_Light;
+        text-decoration: none;
+        transform: scale(1.1);
+        opacity: 1;
+        cursor: pointer;
+    }
+  }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    & .form-input {
+        border: solid 0.3rem rgba($col_Dark, $alpha: 0.2);
+        border-radius: 0%;
+        padding: 5px;
+        width: 80%;
+    }
+
+    & .form-button {
+        background-color: $col_Light;
+        color: $col_White;
+        border:  0 ;
+        border-radius: 0%;
+        height: 2rem;
+        width: 20%;
+        margin: 6vh 0;     
+        font-weight: $weightL;   
+        box-shadow: 0.3rem 0.3rem 0px $col_Atention;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            box-shadow: 0.3rem 0.3rem 0px $col_Light;
+            background-color: $col_Atention;
+            color: $col_Dark;
+            
+        }
+    }
+    & .form-fake {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact{
+        margin: 5%;
+        padding-top: 5%;
+    }
+    .form {
+        & .form-input {
+            border: solid 0.2rem rgba($col_Dark, $alpha: 0.2);
+            border-radius: 0%;
+            padding: 2px;
+            width: 100%;
+        }
+        & .form-button {
+            margin: 3vh 0;     
+        }
+    }
+}
+
+
+

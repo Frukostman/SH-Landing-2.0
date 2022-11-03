@@ -1,0 +1,64 @@
+@import '../../App.scss';
+
+.footer {
+    background-color: $col_Background;
+    height: auto; 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);   
+    padding-top: 0.5rem;
+    &__listado {
+        opacity: 0.8;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+    }
+    &__listado &__icono {
+        background-color: $col_Background;
+        z-index: 1;
+        color: $col_White;
+        font-size: $fontM;
+        padding: 0.8rem;
+        margin: 0 2rem 0 0;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 5px 45px rgba(0,0,0,0.2);
+        backdrop-filter: blur(40px);
+        transition: 0.5s;
+        overflow: hidden;
+        &:hover {
+            opacity: 1;
+            transform: translateY(-20px);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height:100%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: skewX(45deg) translateX(150px);
+            transition: 0.5s;
+        }
+        &:hover::before {
+            transform: skewX(45deg) translateX(-150px);
+        }
+    }
+    &__titulo {
+        margin: 0;
+        padding: 1rem;
+        color: $col_White;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        font-size: $fontXS;
+        font-weight: $weightM;
+        & i {
+            font-weight: $weightL;
+            opacity: 1;
+            font-style: italic;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@import '../../App.scss';
+
+.intro{
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  height: 90vh;
+  background-color: $col_Dark;
+  text-align: center;
+  z-index: -2;
+  padding-bottom: 2rem;
+}
+
+.down{
+  color: $col_White;
+  font-size: $fontL;
+  opacity: 0.6;
+  transition: all 1s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    opacity: 1;
+    color: $col_Light;
+  }
+}
+.header{
+  display: flex;
+  padding: 3vw 0vw 1vw 0vw; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &__info {
+    text-align: left;
+    & .title {
+      color: $col_Medium;
+      font-size: $fontXL*3;
+      font-family: $font_family_1;
+      font-weight: $weightM;
+      text-align: left;
+      text-shadow: 0.2rem 0.2rem 0px $col_Light;
+    }
+    & .data {
+      font-size: $fontL;
+      color: $col_Atention;
+      font-family: $font_family_4;
+      opacity: 0.6;
+      }
+
+  }
+  
+  &__avatar {
+   
+      height: 35vh;
+      width: 35vh;
+      margin-right: 5rem;
+      border-radius: 50%;
+      background-position-y: center;
+      background-size: cover;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .intro{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      height: 90vh;
+    }
+    .down{
+      font-size: $fontM;
+    }
+    .header{
+      display: flex;
+      padding: 2vh 0vw; 
+      flex-direction: column;
+      &__info {
+        justify-content: center;
+        & .title {
+          text-align: center;
+          margin: 4rem 0;
+          font-size: $fontXL*2;
+        }
+        & .data {
+          text-align: center;
+
+        }
+
+      }
+      &__avatar {
+        margin: 5rem 0;
+        height: 35vh;
+        width: 35vh;
+        margin-bottom: 1rem;
+      }
+    }
+}
+@media only screen and (max-width: 450px) {
+  .header {
+    &__info {
+      & .title {
+        font-size: $fontXL*1.5;
+      }
+      & .data {
+        font-size: $fontM;
+      }
+
+    }
+    &__avatar {
+      margin-top: 1rem;
+      height: 30vh;
+      width: 30vh;
+    }
+  }
+}
+
+
+
