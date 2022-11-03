@@ -12,7 +12,7 @@ import './project.scss'
 //     skills: string,
 // }
 
-export const Project = ({project}) => {
+export const Project:any = ({project}:any) => {
 
     const {url, name, description, linkTo, repository, category, skills,} = project
 

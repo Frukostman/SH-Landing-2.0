@@ -30,7 +30,7 @@ export const Contact = () => {
                 <label className="form-label" id="label2" htmlFor="email"></label>
                 <input className="form-input" type="email" name="email" id="input2" placeholder="Email"></input>
                 <label className="form-label form-email" id="label3" htmlFor="message"></label>
-                <textarea className="form-input form-message" type="text" name="message" id="input3" rows="3" placeholder="Message"></textarea>
+                <textarea className="form-input form-message" name="message" id="input3" rows={3} placeholder="Message"></textarea>
                 <input className="form-fake" name="_formsubmit_id" type="text"></input>
                 <input className="form-button" type="submit" value="SEND" id="btnSubmit" onClick={() => success()}></input>                   
             </form>
