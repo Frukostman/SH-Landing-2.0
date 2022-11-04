@@ -1,6 +1,6 @@
 import './header.scss'
 
-import image from '../../assets/images/avatar.jpeg'
+import image from '../../../public/images/avatar.jpeg'
 
 
 export const Header = () => {

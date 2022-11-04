@@ -1,7 +1,7 @@
 import { Skill } from '../Skill/Skill';
 import { Title } from '../Title/Title';
 
-import skills from '../../../src/assets/DB/skillsDB.json'
+import skills from '../../../public/DB/skillsDB.json'
 
 skills.sort(() => 0.5 - Math.random());
 

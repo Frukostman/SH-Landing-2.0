@@ -4,7 +4,7 @@ export const Project:any = ({project}:any) => {
 
     let {url, name, description, linkTo, repository, category, skills,} = project
     
-    url = `../../../${url}`
+    // url = `../../../${url}`
 
     return (
         <li>
