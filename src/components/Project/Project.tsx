@@ -1,28 +1,17 @@
 import './project.scss'
-// import '../../assets/images/'
-
-// interface Project {
-//     id: number,
-//     url: string,
-//     name: string,
-//     description: string,
-//     linkTo: string,
-//     repository: string,
-//     category: string,
-//     skills: string,
-// }
 
 export const Project:any = ({project}:any) => {
 
     let {url, name, description, linkTo, repository, category, skills,} = project
-
-    url = `../../src/assets/${url}`
+    
+    url = `../../../${url}`
 
     return (
         <li>
             <div className="project-card">
                 {/* <img src={`${process.env.PUBLIC_URL}/${project.url}`} alt={project.name} className="img-fluid project-image"></img> */}
-                <img src={`../../src/assets/${url}`} alt={name} className="img-fluid project-image"></img>
+                {/* <img src={`../../src/assets/${url}`} alt={name} className="img-fluid project-image"></img> */}
+                <img src={url} alt={name} className="img-fluid project-image"></img>
                 <h5 className="project-title">{name}</h5>
                 <div className="project-info">
                     <p className="project-category">{category}</p>

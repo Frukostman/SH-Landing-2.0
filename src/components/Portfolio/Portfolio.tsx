@@ -2,6 +2,7 @@ import { Project } from '../Project/Project';
 import { Title } from '../Title/Title';
 
 import projects from '../../assets/DB/projects.json'
+// import projects from '../../../public/DB/projects.json'
 
 import './portfolio.scss'
 

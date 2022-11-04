@@ -107,11 +107,5 @@
         "logo": "devicon-typescript-plain",
         "name": "TypeScript",
         "level":5
-    },
-    {
-        "id": 19,
-        "logo": "",
-        "name": "",
-        "level":5
     }
 ]
